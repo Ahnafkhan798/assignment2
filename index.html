@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>All In One</title>
+</head>
+
+
+<body>
+    
+    <section class="one" id="one">
+        <h2>Converter</h2>
+        <p style="margin:25px;">Type a value in the input field to convert the value:</p>
+        <div>
+            <p>
+                <label>Convert</label>
+                <input type="text" id="input" onchange="converter()"></input>
+                <select id="bn">
+                    <option value="select">select </option>
+                    <option value="pound to kg" id="kg">lb to kg</option>
+                    <option value="kg to pound" id="pound">kg to lb</option>
+                </select>
+                <button id="get">Go</button>
+                <input type="text" id="output">
+
+            </p>
+        </div>
+    </section>
+
+    
+    <section class="two" id="two">
+
+        <div class="grid-container">
+            <div class="grid-item">Input Numbers:</div>
+            <div class="grid-item">
+                <input name="part1" type="text" id="part1" />
+            </div>
+            <div class="grid-item">Max:</div>
+            <div class="grid-item">
+                <div id="max"> </div>
+            </div>
+            <div class="grid-item">Min:</div>
+            <div class="grid-item">
+                <div id="min"> </div>
+            </div>
+            <div class="grid-item">Sum:</div>
+            <div class="grid-item">
+                <div id="sum"> </div>
+            </div>
+            <div class="grid-item">Average :</div>
+            <div class="grid-item">
+                <div id="avg"> </div>
+            </div>
+            <div class="grid-item">Reverse:</div>
+            <div class="grid-item">
+                <div id="reverse"> </div>
+            </div>
+        </div>
+        <button class="button button4" onclick="solution()">calculate</button>
+    </section>
+
+    
+    <section class="three" id="three">
+        <div class="three-detail">
+            <h1 style="font-size: 50px;">Magic!</h1>
+
+            <textarea style="margin:4em;border: 5px dotted green;" id="txt" name="w3review" rows="20" cols="160">
+  </textarea>
+
+            <button class="button button2" id="clear">Clear All</button>
+            <button class="button button2" onclick="capital()">Capitalize</button>
+            <button class="button button2" id="sort">Sort</button>
+            <button class="button button2" id="reverse">Reverse</button>
+            <button class="button button2" id="stripBlank">Strip Blank</button>
+            <button class="button button2" id="addNumbers">Add Numbers</button>
+            <button class="button button2" id="shuffle">Shuffle</button>
+        </div>
+    </section>
+
+
+    <div class="quote-section">
+        <div id="quote" class="block">
+            "We become what we think about." — Earl Nightingale
+
+        </div>
+        <div class="color-btn">
+            <button class="color-btn red-btn" onclick="ChangeRed()"></button>
+            <button class="color-btn blue-btn" onclick="ChangeBlue()"></button>
+            <button class="color-btn yellow-btn" onclick="ChangeYellow()"></button>
+            <button class="color-btn pink-btn" onclick="ChangePink()"></button>
+        </div>
+
+    </div>
+
+
+    
+    <script src="./app.js"></script>
+</body>
+
+</html>
